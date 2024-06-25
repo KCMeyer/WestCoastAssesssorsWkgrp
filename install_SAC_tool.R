@@ -9,8 +9,8 @@ if (any(installed_packages == FALSE)) {
   install.packages(packages[!installed_packages], dependencies = TRUE)
 }
 
-Make sure the following packages are using the most recent versions:
-  library(devtools)
+#Make sure the following packages are using the most recent versions:
+library(devtools)
 devtools::install_github("shcaba/SSS", build_vignettes = TRUE)
 
 install.packages("remotes")
